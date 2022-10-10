@@ -11,7 +11,9 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ConditionDemo {
 
     private ReentrantLock lock = new ReentrantLock();
+
     private Condition condition = lock.newCondition();
+
     private Condition condition2 = lock.newCondition();
 
     public static void main(String[] args) throws InterruptedException {
